@@ -43,6 +43,8 @@ public class Basics {
         /* TODO (Task 1): Write a line of code below that prints the string
          *                Hello World!
          */
+        System.out.println("Hello World");
+
 
 
 
@@ -62,6 +64,7 @@ public class Basics {
          * TODO (Task 2): Create a variable named my_variable and assign it the
          *                value 100.
          */
+        int my_variable = 100;
 
 
 
@@ -99,8 +102,9 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
-
-
+        for (int i = 10; i >= 0; i--) {
+            System.out.println("Current count: " + i);
+        }
     }
 
     /**
@@ -141,11 +145,11 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
-
-        // Fill in the rest of the body here
-
-        return ret.toString();
-    }
+        str[] word = to_split.split(" ");
+        for (str s : word) {
+            ret.append(s.charAt(0));
+            return ret.toString();
+        }
 
     /**
      * 7. Below is a method that takes in an integer array (similar to a list
