@@ -145,11 +145,15 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
-        str[] word = to_split.split(" ");
-        for (str s : word) {
-            ret.append(s.charAt(0));
-            return ret.toString();
+
+        String[] character = to_split.split(" ");
+
+        for (String word : character) {
+            ret.append(word.charAt(0));
         }
+
+        return ret.toString();
+    }
 
     /**
      * 7. Below is a method that takes in an integer array (similar to a list
@@ -174,7 +178,9 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
-
+        for (int i = 1; i < arr.length; i = i + 2) {
+            current_sum += arr[i];
+        }
         return current_sum;
     }
 
